@@ -1,0 +1,60 @@
+@layer base {
+  :focus:not(:focus-visible),
+  :focus:not(:focus-within) {
+    outline: none !important;
+  }
+
+  :focus-visible {
+    outline: solid 2px var(--color-blue-focus);
+    outline-offset: 4px;
+  }
+
+  [x-cloak] {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  [x-cloak="hidden"] {
+    display: none !important;
+  }
+
+  [id] {
+    scroll-margin-top: var(--scroll-top, var(--header-height, 0px));
+  }
+
+  h1[id],
+  h2[id],
+  h3[id],
+  h4[id],
+  h5[id],
+  h6[id] {
+    scroll-margin-top: var(
+      --scroll-top,
+      calc(var(--header-height, 0px) + 2rem)
+    );
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-size: 16px;
+		font-weight: 400;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased; 
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeSpeed;
+		font-optical-sizing: auto;
+		font-synthesis: none;
+		font-kerning: none;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

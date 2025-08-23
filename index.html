@@ -5,13 +5,45 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/vite.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/main.css">
   <script type="module" src="/src/main.js"></script>
-  <title>Vite App</title>
+  <title>postcss-clampwind</title>
 </head>
 
-<body>
-  <div class="text-3xl font-bold underline text-[clamp(12px,99px)]">Hello world</div>
+<body class="">
+  <main class="w-full max-w-none px-[clamp(16px,32px)] py-[clamp(16px,80px)]">
+    <div class="relative size-full min-h-[200vh] border-y border-gray-200">
+      <span class="absolute left-0 top-[-100vh] w-1 h-[600vh] border-l border-gray-200"></span>
+      <span class="absolute right-0 top-[-100vh] w-1 h-[600vh] border-l border-gray-200"></span>
+
+      <div class="flex flex-col justify-center">
+        <div class="px-[clamp(8,24)] py-[clamp(12,16)] w-full border-b border-gray-200">
+          <h2 class="text-[clamp(16,24)] font-semibold font-mono text-blue-500">postcss-clampwind</h2>
+        </div>
+        <div class="px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200">
+          <h1
+            class="text-[clamp(40,80)] tracking-tight leading-[clamp(42,96)] text-balance max-w-[clamp(400px,1200px)]">
+            Bring the power
+            of clamp()
+            to your components</h1>
+        </div>
+
+        <div class="px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200">
+          <p class="text-[clamp(20,28)] leading-[clamp(28,40)] max-w-[clamp(400px,800px)]  text-gray-700">
+            A Post CSS plugin that generates fluid, responsive CSS using the
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" target="_blank" rel="noopener"
+              class="underline font-medium">clamp()</a>
+            function, without you touching the math behind it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
