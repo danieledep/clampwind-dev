@@ -24,6 +24,7 @@
   --font-mono: "Google Sans Code", monospace;
   --font-sans:  "Inter", sans-serif;
 
+  --breakpoint-xs: 400px;
   --breakpoint-4xl: 1720px;
 
 	--spacing: 1px;
