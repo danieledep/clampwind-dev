@@ -70,7 +70,11 @@ pre[class*="language-"] {
 .token.symbol {
 	color: #f8c555;
 }
-.token.atrule,
+
+.token.atrule {
+  color: var(--color-slate-50) !important;
+}
+
 .token.builtin,
 .token.important,
 .token.keyword,
