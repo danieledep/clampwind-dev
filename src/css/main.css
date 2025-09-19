@@ -1,7 +1,6 @@
 @import "./_tailwind.css";
 @import "./base.css";
 @import "./prism.css";
-@import "./typography.css";
 @import "./utilities.css";
 
 .bg-diagonal {

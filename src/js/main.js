@@ -1,8 +1,6 @@
 import Alpine from 'alpinejs'
 import ResizeFrame from './resizeFrame.js'
 import '/src/css/main.css'
-
-// Import Prism.js for syntax highlighting
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
 
@@ -19,8 +17,6 @@ Prism.hooks.add("wrap", function (env) {
 
   // Split class list by spaces
   let classes = env.content.split(/\s+/);
-
-  // Highlight just the one you want
   classes = classes.map(cls => {
     if (cls.includes("clamp(")) {
       return `<span class="bg-[lab(19.93%_-1.66_-9.7)] rounded px-4 py-2">${cls}</span>`;
@@ -28,7 +24,6 @@ Prism.hooks.add("wrap", function (env) {
     return cls;
   });
 
-  // Join back together
   env.content = classes.join(" ");
 });
 
