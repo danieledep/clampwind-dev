@@ -1,7 +1,7 @@
-export default function resizeFrame(options = { minPx: 350, maxPx: 750 }) {
+export default function resizeFrame() {
   return {
-    minPx: options.minPx,
-    maxPx: options.maxPx,
+    minPx: null,
+    maxPx: null,
     isResizing: false,
     startX: 0,
     startWidth: 0,
@@ -13,10 +13,31 @@ export default function resizeFrame(options = { minPx: 350, maxPx: 750 }) {
     handleEl: null,
 
     init() {
-      // clamp initial width
-      const initial = this.$el.offsetWidth;
+      const style = getComputedStyle(this.$root);
+      const parsePx = (v, fallback) => {
+        if (!v || v === 'none' || v === 'auto') return fallback;
+        const n = parseFloat(v);
+        return Number.isFinite(n) ? n : fallback;
+      };
+
+      this.minPx = parsePx(style.minWidth, 0);
+      this.maxPx = parsePx(style.maxWidth, Infinity);
+
+      const initial = this.$root.offsetWidth;
       this.frameWidth = Math.max(this.minPx, Math.min(this.maxPx, initial));
       this.startWidth = this.frameWidth;
+
+      window.addEventListener('resize', () => {
+        const style = getComputedStyle(this.$root);
+        const parsePx = (v, fallback) => {
+          if (!v || v === 'none' || v === 'auto') return fallback;
+          const n = parseFloat(v);
+          return Number.isFinite(n) ? n : fallback;
+        };
+        this.minPx = parsePx(style.minWidth, 0);
+        this.maxPx = parsePx(style.maxWidth, Infinity);
+        this.frameWidth = Math.max(this.minPx, Math.min(this.maxPx, this.$root.offsetWidth));
+      });
     },
 
     startResize(e) {
