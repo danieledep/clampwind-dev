@@ -12,6 +12,16 @@
 		transparent 0,
 		transparent 50%
 	);
+
+	@media (prefers-color-scheme: dark) {
+		background-image: repeating-linear-gradient(
+			45deg,
+			var(--color-neutral-800) 0,
+			var(--color-neutral-800) 1px,
+			transparent 0,
+			transparent 50%
+		);
+	}
 }
 
 .single-highlight .highlight {
