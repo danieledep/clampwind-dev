@@ -1,5 +1,6 @@
 import Alpine from 'alpinejs'
 import ResizeFrame from './resizeFrame.js'
+import setFavicon from "./favicon.js";
 import '/src/css/main.css'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
@@ -26,5 +27,7 @@ Prism.hooks.add("wrap", function (env) {
 
   env.content = classes.join(" ");
 });
+
+setFavicon();
 
 Prism.highlightAll()

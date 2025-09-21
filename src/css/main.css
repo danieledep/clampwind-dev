@@ -3,6 +3,10 @@
 @import "./prism.css";
 @import "./utilities.css";
 
+:root {
+	--custom-size: 16px;
+}
+
 .bg-diagonal {
 	background-size: 10px 10px;
 	background-image: repeating-linear-gradient(
