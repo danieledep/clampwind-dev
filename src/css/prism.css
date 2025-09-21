@@ -22,12 +22,20 @@ pre[class*="language-"] {
 	hyphens: none;
   text-shadow: none !important;
 }
+
+code[class*="language-"] ::selection,
+pre[class*="language-"] ::selection {
+	@apply !bg-sky-300/20;
+}
+
+
 pre[class*="language-"] {
   margin: 0 !important;
 	padding: clamp(12px,16px) !important;
 	overflow: auto;
   height: 100% !important;
 }
+
 code[class*="language-js"] {
   color: var(--color-sky-300) !important;
 }
@@ -36,11 +44,13 @@ code[class*="language-js"] {
 pre[class*="language-"] {
 	background: oklch(0.25 0.02 272.8) !important;
 }
+
 :not(pre) > code[class*="language-"] {
 	padding: 0.1em;
 	border-radius: 0.3em;
 	white-space: normal;
 }
+
 .token.block-comment,
 .token.cdata,
 .token.comment,

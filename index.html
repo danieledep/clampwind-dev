@@ -128,18 +128,113 @@
           </div>
         </div>
 
+        <!-- How it works -->
         <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200 min-h-[clamp(82,120)]"></div>
-        <div class="w-full grid lg:grid-cols-[33.3%_66.6%] 2xl:grid-cols-[66.65%_33.34%] border-b border-gray-200">
+        <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200">
+          <h3
+            class="text-[clamp(40,84)] tracking-tight leading-[clamp(42,96)] text-balance max-w-[clamp(400px,1200px)]">
+            <a href="#how-it-works" id="how-it-works" class="no-underline">How it works</a>
+          </h3>
+        </div>
+        <div class="w-full grid md:grid-cols-[45%_55%] border-b border-gray-200">
+          <div class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+            <span
+              class="absolute left-0 top-0 size-[clamp(15,40)] border-r border-b  border-gray-200 flex items-center justify-center">
+              <span class="text-[clamp(12,14)] font-mono font-semibold">
+                1
+              </span>
+            </span>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
+              Use the square brackets to generate custom CSS, write inside the brackets a <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" rel="noopener" target="_blank"
+                class="underline font-medium">clamp()</a> function with only two values, instead of
+              the regular <code
+                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">clamp(min, preferred, max)</code>
+              syntax.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-css">
+    
+    .text-\[clamp\(16px\,32px\)\] {
+      font-size: clamp(16px, 32px);
+    }
+                </code>
+              </pre>
+            </div>
+          </div>
+          <div class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-gray-200">
+            <span
+              class="absolute left-0 top-0 size-[clamp(15,40)] border-r border-b  border-gray-200 flex items-center justify-center">
+              <span class="text-[clamp(12,14)] font-mono font-semibold">
+                2
+              </span>
+            </span>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
+              The PostCSS plugin finds all the occurrences in your CSS, converts everything to <span
+                class="font-medium">rems</span>, and calculates the <span class="font-medium">clamp()</span> formula
+              using the <span class="font-medium">smallest and largest breakpoints</span> as the ranges for the
+              scaling.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)]">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-css">
+    
+    .text-\[clamp\(16px\,32px\)\] {
+      font-size: clamp(1rem, calc(1rem + 0.0121 * (100vw - 25rem)), 2rem);
+    }
+                </code>
+              </pre>
+            </div>
+          </div>
+          <div class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-t border-gray-200">
+            <span
+              class="absolute left-0 top-0 size-[clamp(15,40)] border-r border-b  border-gray-200 flex items-center justify-center">
+              <span class="text-[clamp(12,14)] font-mono font-semibold">
+                3
+              </span>
+            </span>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
+              If the plugin finds any <span class="font-medium">media query</span> containing the clamp() function it
+              will use these as the range bounds
+              to calculate the scaling formula.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-t border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-css">
+    .md\:max-lg\:text-\[clamp\(16px\,32px\)\] {
+      @media (width >= 48rem ) { /* 768px */
+        @media (width &lt; 64rem ) { /* 1024px */
+          font-size: clamp(1rem, calc(1rem + 0.0625 * (100vw - 48rem)), 2rem);
+        }
+      }
+    }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Installation -->
+        <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200 min-h-[clamp(82,120)]"></div>
+        <div class="w-full grid border-b border-gray-200">
           <div class="px-[clamp(8,24)] py-[clamp(12,16)]">
             <h2
               class="text-[clamp(40,84)] tracking-tight leading-[clamp(42,96)] text-balance max-w-[clamp(400px,1200px)]">
-              Installation
+              <a href="#installation" id="installation" class="no-underline">Installation</a>
             </h2>
           </div>
-          <div class="w-full px-[clamp(8,24)] py-[clamp(24,32)] max-lg:border-t lg:border-l border-gray-200">
-            <div class="flex flex-col md:flex-row md:items-center w-full justify-between gap-[clamp(8,24)]">
+          <div class="w-full grid lg:grid-cols-[66.65%_33.34%] border-t border-gray-200">
+            <div
+              class="flex flex-col md:flex-row md:items-center w-full justify-between gap-[clamp(8,24)] px-[clamp(8,24)] py-[clamp(24,32)] lg:border-r border-gray-200">
               <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-180 -mb-12">
-                Install the PostCSS plugin with <span class="font-medium">npm.</span>
+                Install the PostCSS plugin with <span class="font-medium">npm</span>
               </p>
               <div class="w-fit h-80 text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden  mt-[clamp(12,16)]">
                 <pre class="!overflow-hidden !pt-8 !px-20">
@@ -227,99 +322,6 @@ module.exports = {
     require("postcss-clampwind").default
   } 
 };
-                </code>
-              </pre>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200 min-h-[clamp(82,120)]"></div>
-        <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200">
-          <h3
-            class="text-[clamp(40,84)] tracking-tight leading-[clamp(42,96)] text-balance max-w-[clamp(400px,1200px)]">
-            How it works
-          </h3>
-        </div>
-        <div class="w-full grid md:grid-cols-[45%_55%] border-b border-gray-200">
-          <div class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
-            <span
-              class="absolute left-0 top-0 size-[clamp(15,40)] border-r border-b  border-gray-200 flex items-center justify-center">
-              <span class="text-[clamp(12,14)] font-mono font-semibold">
-                1
-              </span>
-            </span>
-            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
-              Use the square brackets to generate custom CSS, write inside the brackets a <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" rel="noopener" target="_blank"
-                class="underline font-medium">clamp()</a> function with only two values, instead of
-              the regular <code
-                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">clamp(min, preferred, max)</code>
-              syntax.
-            </p>
-          </div>
-          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
-            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
-              <pre>
-                <code class="language-css">
-    
-    .text-\[clamp\(16px\,32px\)\] {
-      font-size: clamp(16px, 32px);
-    }
-                </code>
-              </pre>
-            </div>
-          </div>
-          <div class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-gray-200">
-            <span
-              class="absolute left-0 top-0 size-[clamp(15,40)] border-r border-b  border-gray-200 flex items-center justify-center">
-              <span class="text-[clamp(12,14)] font-mono font-semibold">
-                2
-              </span>
-            </span>
-            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
-              The PostCSS plugin finds all the occurrences in your CSS, converts everything to <span
-                class="font-medium">rems</span>, and calculates the <span class="font-medium">clamp()</span> formula
-              using the <span class="font-medium">smallest and largest breakpoints</span> as the ranges for the
-              scaling.
-            </p>
-          </div>
-          <div class="w-full p-[clamp(8,24)]">
-            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
-              <pre>
-                <code class="language-css">
-    
-    .text-\[clamp\(16px\,32px\)\] {
-      font-size: clamp(1rem, calc(1rem + 0.0121 * (100vw - 25rem)), 2rem);
-    }
-                </code>
-              </pre>
-            </div>
-          </div>
-          <div class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-t border-gray-200">
-            <span
-              class="absolute left-0 top-0 size-[clamp(15,40)] border-r border-b  border-gray-200 flex items-center justify-center">
-              <span class="text-[clamp(12,14)] font-mono font-semibold">
-                3
-              </span>
-            </span>
-            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
-              If the plugin finds any <span class="font-medium">media query</span> containing the clamp() function it
-              will use these as the range bounds
-              to calculate the scaling formula.
-            </p>
-          </div>
-          <div class="w-full p-[clamp(8,24)] border-t border-gray-200">
-            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
-              <pre>
-                <code class="language-css">
-    .md\:max-lg\:text-\[clamp\(16px\,32px\)\] {
-      @media (width >= 48rem ) { /* 768px */
-        @media (width &lt; 64rem ) { /* 1024px */
-          font-size: clamp(1rem, calc(1rem + 0.0625 * (100vw - 48rem)), 2rem);
-        }
-      }
-    }
                 </code>
               </pre>
             </div>
