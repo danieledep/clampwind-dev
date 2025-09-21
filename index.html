@@ -16,14 +16,14 @@
 </head>
 
 <body class="bg-neutral-100 text-slate-800">
-  <main class="relative w-full max-w-[1720px] mx-auto px-[clamp(16px,32px)] py-[clamp(16px,80px)]">
+  <main class="relative w-full max-w-[1720px] mx-auto px-[clamp(16px,32px)] py-[clamp(16px,80px)] overflow-hidden">
     <span
-      class="block absolute left-0 top-[-100vh] w-[clamp(16px,32px)] h-[600vh] bg-diagonal border-l border-gray-200"></span>
+      class="block absolute left-0 top-[-100vh] w-[clamp(16px,32px)] h-[6000vh] bg-diagonal border-l border-gray-200"></span>
     <span
-      class="block absolute right-0 top-[-100vh] w-[clamp(16px,32px)] h-[600vh] bg-diagonal border-r border-gray-200"></span>
+      class="block absolute right-0 top-[-100vh] w-[clamp(16px,32px)] h-[6000vh] bg-diagonal border-r border-gray-200"></span>
     <div class="relative size-full min-h-[200vh] border-t border-gray-200">
-      <span class="block absolute left-0 top-[-100vh] w-1 h-[600vh] border-l border-gray-200"></span>
-      <span class="block absolute right-0 top-[-100vh] w-1 h-[600vh] border-l border-gray-200"></span>
+      <span class="block absolute left-0 top-[-100vh] w-1 h-[6000vh] border-l border-gray-200"></span>
+      <span class="block absolute right-0 top-[-100vh] w-1 h-[6000vh] border-l border-gray-200"></span>
 
       <div class="flex flex-col justify-center">
         <div class="px-[clamp(8,24)] py-[clamp(12,16)] w-full border-b border-gray-200">
@@ -83,15 +83,15 @@
             <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
               <pre>
               <code class="language-html">
- &lt;main class="w-full p-[clamp(16px,96px)]">
-   &lt;div class="flex flex-col gap-[clamp(12px,48px)]">
-    &lt;div class="grid grid-cols-2 gap-[clamp(8px,24px)]">
+ &lt;main class="w-full p-[clamp(16px,96px)] ">
+   &lt;div class="flex flex-col gap-[clamp(12px,48px)] ">
+    &lt;div class="grid grid-cols-2 gap-[clamp(8px,24px)] ">
       &lt;img src="/src/img/house-1.jpg" width="300" height="300" alt="" class="size-full object-cover rounded-lg">
       &lt;img src="/src/img/house-2.jpg" width="300" height="300" alt="" class="size-full object-cover rounded-lg">
     &lt;/div>
     &lt;div class="flex items-center justify-between">
       &lt;div class="flex flex-col">
-        &lt;span class="text-gray-500 font-medium <span class="highlight">text-[clamp(14px,24px)]</span>">
+        &lt;span class="text-gray-500 font-medium text-[clamp(14px,24px)] ">
           Entire house
         &lt;/span>
         &lt;h1 class="font-semibold text-[clamp(24px,68px)] leading-[124%]">
@@ -99,8 +99,8 @@
         &lt;/h1>
       &lt;/div>
       &lt;button class="flex items-center justify-center bg-blue-600 py-[clamp(8px,16px)] px-[clamp(12px,96px)] rounded-lg gap-[clamp(8px,16px)] cursor-pointer hocus:bg-blue-600/90 transition-colors duration-300 ease-in-out">
-        &lt;svg class="stroke-gray-50 size-[clamp(18px,26px)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-width="2" d="M20 10V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3m16 0H4m16 0v.75M4 10v9a2 2 0 0 0 2 2h6M8 3v4m8-4v4M17.536 14v3.535m0 3.536v-3.536m0 0h3.535m-3.535 0H14" />&lt;/svg>
-        &lt;span class="font-semibold text-gray-50 text-[clamp(16px,32px)]">Book&lt;/span>
+        &lt;svg class="stroke-gray-50 size-[clamp(18px,26px)] " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-width="2" d="M20 10V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3m16 0H4m16 0v.75M4 10v9a2 2 0 0 0 2 2h6M8 3v4m8-4v4M17.536 14v3.535m0 3.536v-3.536m0 0h3.535m-3.535 0H14" />&lt;/svg>
+        &lt;span class="font-semibold text-gray-50 text-[clamp(16px,32px)] ">Book&lt;/span>
       &lt;/button>
     &lt;/div>
   &lt;/div>
@@ -144,12 +144,12 @@
                 1
               </span>
             </span>
-            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
               Use the square brackets to generate custom CSS, write inside the brackets a <a
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" rel="noopener" target="_blank"
                 class="underline font-medium">clamp()</a> function with only two values, instead of
               the regular <code
-                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">clamp(min, preferred, max)</code>
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">clamp(min, preferred, max)</code>
               syntax.
             </p>
           </div>
@@ -172,7 +172,7 @@
                 2
               </span>
             </span>
-            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
               The PostCSS plugin finds all the occurrences in your CSS, converts everything to <span
                 class="font-medium">rems</span>, and calculates the <span class="font-medium">clamp()</span> formula
               using the <span class="font-medium">smallest and largest breakpoints</span> as the ranges for the
@@ -198,7 +198,7 @@
                 3
               </span>
             </span>
-            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500">
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
               If the plugin finds any <span class="font-medium">media query</span> containing the clamp() function it
               will use these as the range bounds
               to calculate the scaling formula.
@@ -254,10 +254,10 @@ npm install postcss-clampwind
               Vite
             </h3>
             <p class="min-h-64 lg:min-h-96">If you are using Vite with <code
-                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">@tailwindcss/vite</code>,
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">@tailwindcss/vite</code>,
               import the
               plugin and use it in your <code
-                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">.postcss.config.js</code>
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">.postcss.config.js</code>
               file.</p>
             <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden mt-[clamp(12,16)]">
               <pre>
@@ -281,7 +281,7 @@ npm install postcss-clampwind
               PostCSS
             </h3>
             <p class="min-h-64 lg:min-h-96"> Add the plugin to the plugin list in your <code
-                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">.postcss.config.js</code>
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">.postcss.config.js</code>
               configuration file.</p>
             <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden mt-[clamp(12,16)]">
               <pre>
@@ -307,9 +307,9 @@ npm install postcss-clampwind
               Webpack
             </h3>
             <p class="min-h-64 lg:min-h-96">When using CommonJS-based build tools like Webpack, use the <code
-                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">require</code>
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">require</code>
               syntax and add <code
-                class="code-inline font-mono text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">.default</code>
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">.default</code>
               to the import.</p>
             <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden mt-[clamp(12,16)]">
               <pre>
@@ -328,6 +328,7 @@ module.exports = {
           </div>
         </div>
 
+        <!-- Features -->
         <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200 min-h-[clamp(82,120)]"></div>
         <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200">
           <h3
@@ -335,9 +336,240 @@ module.exports = {
             Features
           </h3>
         </div>
+        <div class="w-full grid md:grid-cols-[45%_55%] border-b border-gray-200">
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Clamp between two breakpoints</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Use the native Tailwind syntax to clamp any CSS property value within a specific range by using breakpoint
+              modifiers.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" md:max-lg:text-[clamp(16px,32px)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Clamp from and to a single breakpoint</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Add a single breakpoint modifier to generate the scaling formula from the defined
+              breakpoint to
+              the largest breakpoint. Use the <code
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">max-</code>
+              modifier to
+              clamp from the smallest breakpoint to the defined breakpoint.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+                  
+
+    &lt;div class=" max-md:text-[clamp(16px,24px)] ">&lt;/div>
+    &lt;div class=" md:text-[clamp(24px,32px)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Clamp between custom breakpoints</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Generate one-off custom breakpoint size by writing the value inside brackets, use the <code
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">min-</code>
+              and <code
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">max-</code>
+              modifier. This works also with only one modifier.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" min-[800px]:max-[1200px]:text-[clamp(16px,32px)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Interchangeable px/rem
+              units</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Clamped values can use either px or rem interchangeably, the plugin will convert all values to rem.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" text-[clamp(16px,2rem)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Unitless clamping</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              If no unit is specified, the calculation will multiply the value for your theme’s <code
+                class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 rounded px-4 py-1">-&#8205;-&#8205;spacing</code>
+              scale.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" text-[clamp(16,32)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Use Tailwind size variables</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Clamp using Tailwind’s predefined size tokens.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" text-[clamp(var(--text-sm),32px)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Use CSS custom properties</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Clamp using CSS custom properties.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" text-[clamp(var(--custom-size),32px)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Container query support</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Clamp values based on container query breakpoints.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" @md:text-[clamp(16px,32px)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Decreasing and negative ranges</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Support clamped ranges that shrink or go below zero.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-html single-highlight">
+    
+
+    &lt;div class=" mt-[clamp(32px,-16px)] ">&lt;/div>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full flex flex-col gap-[clamp(8,12)] px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b-0 border-gray-200">
+
+            <h4 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 text-balance">
+              Error reporting in CSS comments</h4>
+            <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 max-w-500 text-pretty">
+              Output validation errors as CSS comments for easy debugging.
+            </p>
+          </div>
+          <div class="w-full p-[clamp(8,24)] border-b-0 border-gray-200">
+            <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+              <pre>
+                <code class="language-css">
+    
+    .text-\[clamp\(16%\,32px\)\] {
+      font-size: clamp(16%, 32px); /* Invalid clamp() values */
+    }
+                </code>
+              </pre>
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </div>
 
+    <div class="w-full px-[clamp(8,24)] py-[clamp(12,16)] border-b border-gray-200 min-h-[clamp(82,120)]"></div>\
     <div>Photos by <a
         href="https://unsplash.com/@merittthomas?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Meritt
         Thomas</a> on <a

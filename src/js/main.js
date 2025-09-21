@@ -19,7 +19,7 @@ Prism.hooks.add("wrap", function (env) {
   let classes = env.content.split(/\s+/);
   classes = classes.map(cls => {
     if (cls.includes("clamp(")) {
-      return `<span class="bg-[lab(19.93%_-1.66_-9.7)] rounded px-4 py-2">${cls}</span>`;
+      return `<span class="highlight bg-[lab(19.93%_-1.66_-9.7)] rounded px-4 py-2">${cls}</span>`;
     }
     return cls;
   });
