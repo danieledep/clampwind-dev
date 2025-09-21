@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "postcss-clampwind": "^0.0.5",
+    "postcss-clampwind": "^0.0.7",
     "vite": "^7.1.2"
   },
   "dependencies": {
