@@ -1,12 +1,14 @@
 import Alpine from 'alpinejs'
 import ResizeFrame from './resizeFrame.js'
 import setFavicon from "./favicon.js";
+import smoothScroll from "./smoothScroll.js";
 import '/src/css/main.css'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
 
 
 Alpine.data('resizeFrame', ResizeFrame);
+Alpine.data('smoothScroll', smoothScroll);
 
 window.Alpine = Alpine
 
