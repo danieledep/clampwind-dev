@@ -176,7 +176,10 @@
                   class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
                   Use the square brackets to generate custom CSS. Write inside the brackets a <a
                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" rel="noopener" target="_blank"
-                    class="underline font-medium">clamp()</a> function with only two values, instead of
+                    class="underline font-medium">clamp()</a> function with only two values, <span class="font-medium">
+                    a minimum and maximum
+                    value,
+                  </span> instead of
                   the regular <code
                     class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 dark:bg-gray-900 dark:border-gray-800  rounded px-4 py-1">clamp(min, preferred, max)</code>
                   syntax.
@@ -207,7 +210,8 @@
                 <p
                   class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
                   The PostCSS plugin finds all the occurrences in your CSS, converts everything to <span
-                    class="font-medium">rems</span>, and calculates the <span class="font-medium">clamp()</span> formula
+                    class="font-medium">rems</span>, and calculates the missing value of the <span
+                    class="font-medium">clamp()</span> formula
                   using the <span class="font-medium">smallest and largest breakpoints</span> as the range for the
                   scaling.
                 </p>
