@@ -1,34 +1,42 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<!-- Tinylitics -->
+		<script
+			src="https://tinylytics.app/embed/vUJuscGnzvwEzMsYavy_.js"
+			defer
+		></script>
 
-<head>
-  <!-- Tinylitics -->
-  <script src="https://tinylytics.app/embed/vUJuscGnzvwEzMsYavy_.js" defer></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/src/css/main.css" />
+		<script type="module" src="/src/js/main.js"></script>
+		<title>postcss-clampwind</title>
+		<link rel="icon" type="image/svg+xml" href="/src/img/favicon.svg" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/src/img/apple-touch-icon.png"
+		/>
+		<link rel="manifest" href="/src/img/site.webmanifest" />
+		<link rel="mask-icon" href="/src/img/safari-pinned-tab.svg" />
+		<meta name="apple-mobile-web-app-title" content="Clampwind" />
+		<meta name="application-name" content="Clampwind" />
+		<meta name="msapplication-TileColor" content="#000" />
+		<meta property="og:image" content="/src/img/meta-img.png" />
+		<meta property="og:image:alt" content="Clampwind" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="700" />
+	</head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/main.css">
-  <script type="module" src="/src/js/main.js"></script>
-  <title>postcss-clampwind</title>
-  <link rel="icon" type="image/svg+xml" href="/src/img/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="/src/img/apple-touch-icon.png">
-  <link rel="manifest" href="/src/img/site.webmanifest">
-  <link rel="mask-icon" href="/src/img/safari-pinned-tab.svg">
-  <meta name="apple-mobile-web-app-title" content="Clampwind">
-  <meta name="application-name" content="Clampwind">
-  <meta name="msapplication-TileColor" content="#000">
-  <meta property="og:image" content="/src/img/meta-img.png">
-  <meta property="og:image:alt" content="Clampwind">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="700">
-</head>
-
-<body class="bg-neutral-100 dark:bg-neutral-950 text-slate-800 dark:text-slate-300">
+	<!-- prettier-ignore -->
+	<body class="bg-neutral-100 dark:bg-neutral-950 text-slate-800 dark:text-slate-300">
   <main class="relative w-full max-w-[1720px] mx-auto px-[clamp(16px,32px)] py-[clamp(16px,80px)] overflow-hidden">
     <span
       class="block absolute left-0 top-[-100vh] w-[clamp(16px,32px)] h-[6000vh] bg-diagonal border-l border-gray-200 dark:border-neutral-800 "></span>
@@ -122,29 +130,29 @@
             <!-- Code 1 -->
             <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
               <pre>
-              <code class="language-html">
- &lt;main class="w-full p-[clamp(16px,96px)] ">
-   &lt;div class="flex flex-col gap-[clamp(12px,48px)] ">
-    &lt;div class="grid grid-cols-2 gap-[clamp(8px,24px)] ">
-      &lt;img src="/src/img/house-1.jpg" width="300" height="300" alt="" class="size-full object-cover rounded-lg">
-      &lt;img src="/src/img/house-2.jpg" width="300" height="300" alt="" class="size-full object-cover rounded-lg">
-    &lt;/div>
-    &lt;div class="flex items-center justify-between">
-      &lt;div class="flex flex-col">
-        &lt;span class="text-gray-500 font-medium text-[clamp(14px,24px)] ">
+              <code class="language-html clamp-highlight">
+ &lt;main class="w-full p-[clamp(16px,96px)] "&gt;
+   &lt;div class="flex flex-col gap-[clamp(12px,48px)] "&gt;
+    &lt;div class="grid grid-cols-2 gap-[clamp(8px,24px)] "&gt;
+      &lt;img src="/src/img/house-1.jpg" width="300" height="300" alt="" class="size-full object-cover rounded-lg"&gt;
+      &lt;img src="/src/img/house-2.jpg" width="300" height="300" alt="" class="size-full object-cover rounded-lg"&gt;
+    &lt;/div&gt;
+    &lt;div class="flex items-center justify-between"&gt;
+      &lt;div class="flex flex-col"&gt;
+        &lt;span class="text-gray-500 font-medium text-[clamp(14px,24px)] "&gt;
           Entire house
-        &lt;/span>
-        &lt;h1 class="font-semibold text-[clamp(24px,68px)] leading-[124%]">
+        &lt;/span&gt;
+        &lt;h1 class="font-semibold text-[clamp(24px,68px)] leading-[124%]"&gt;
           Beach house on Lake Charlotte
-        &lt;/h1>
-      &lt;/div>
-      &lt;button class="flex items-center justify-center bg-blue-600 py-[clamp(8px,16px)] px-[clamp(12px,96px)] rounded-lg gap-[clamp(8px,16px)] cursor-pointer hocus:bg-blue-600/90 transition-colors duration-300 ease-in-out">
-        &lt;svg class="stroke-gray-50 size-[clamp(18px,26px)] " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-width="2" d="M20 10V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3m16 0H4m16 0v.75M4 10v9a2 2 0 0 0 2 2h6M8 3v4m8-4v4M17.536 14v3.535m0 3.536v-3.536m0 0h3.535m-3.535 0H14" />&lt;/svg>
-        &lt;span class="font-semibold text-gray-50 text-[clamp(16px,32px)] ">Book&lt;/span>
-      &lt;/button>
-    &lt;/div>
-  &lt;/div>
- &lt;/main>
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;button class="flex items-center justify-center bg-blue-600 py-[clamp(8px,16px)] px-[clamp(12px,96px)] rounded-lg gap-[clamp(8px,16px)] cursor-pointer hocus:bg-blue-600/90 transition-colors duration-300 ease-in-out"&gt;
+        &lt;svg class="stroke-gray-50 size-[clamp(18px,26px)] " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-width="2" d="M20 10V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3m16 0H4m16 0v.75M4 10v9a2 2 0 0 0 2 2h6M8 3v4m8-4v4M17.536 14v3.535m0 3.536v-3.536m0 0h3.535m-3.535 0H14" /&gt;&lt;/svg&gt;
+        &lt;span class="font-semibold text-gray-50 text-[clamp(16px,32px)] "&gt;Book&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/main&gt;
               </code>
             </pre>
             </div>
@@ -173,7 +181,7 @@
                   </span>
                 </span>
                 <p
-                  class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                  class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                   Use the square brackets to generate custom CSS. Write inside the brackets a <a
                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" rel="noopener" target="_blank"
                     class="underline font-medium">clamp()</a> function with only two values, <span class="font-medium">
@@ -188,6 +196,33 @@
               <div class="w-full p-[clamp(8,24)] border-b border-gray-200 dark:border-neutral-800 ">
                 <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
                   <pre>
+                    <code class="language-html">
+
+                      
+    &lt;span class="text-[clamp(16px,32px)]"&gt;&lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </li>
+            <li class="contents">
+              <div
+                class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-b border-gray-200 dark:border-neutral-800 ">
+                <span
+                  class="absolute left-0 top-0 size-[clamp(32,40)] border-r border-b  border-gray-200 dark:border-neutral-800  flex items-center justify-center">
+                  <span class="text-[14px] font-mono font-semibold">
+                    2
+                  </span>
+                </span>
+                <p
+                  class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
+                  This way, Tailwind generates the CSS as-is. The generated <code
+                    class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 dark:bg-gray-900 dark:border-gray-800  rounded px-4 py-1">clamp()</code> function is not valid CSS, therefore has no effect on the html.
+                </p>
+              </div>
+              <div class="w-full p-[clamp(8,24)] border-b border-gray-200 dark:border-neutral-800 ">
+                <div class="size-full text-[clamp(13,15)] rounded-[clamp(8px,12px)] overflow-hidden">
+                  <pre>
                     <code class="language-css">
           
     .text-\[clamp\(16px\,32px\)\] {
@@ -197,18 +232,18 @@
                   </pre>
                 </div>
               </div>
-            </li>
+            </li> 
             <li class="contents">
               <div
                 class="relative w-full px-[clamp(8,24)] py-[clamp(40,80)] border-r border-gray-200 dark:border-neutral-800 ">
                 <span
                   class="absolute left-0 top-0 size-[clamp(32,40)] border-r border-b  border-gray-200 dark:border-neutral-800  flex items-center justify-center">
                   <span class="text-[14px] font-mono font-semibold">
-                    2
+                    3
                   </span>
                 </span>
                 <p
-                  class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                  class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                   The PostCSS plugin finds all the occurrences in your CSS, converts everything to <span
                     class="font-medium">rems</span>, and calculates the missing value of the <span
                     class="font-medium">clamp()</span> formula
@@ -235,11 +270,11 @@
                 <span
                   class="absolute left-0 top-0 size-[clamp(32,40)] border-r border-b  border-gray-200 dark:border-neutral-800  flex items-center justify-center">
                   <span class="text-[14px] font-mono font-semibold">
-                    3
+                    4
                   </span>
                 </span>
                 <p
-                  class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                  class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                   If the plugin finds any <span class="font-medium">media query</span> containing the clamp() function
                   it
                   will use these as the range bounds
@@ -398,7 +433,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Clamp between two breakpoints</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Use the native Tailwind syntax to clamp any CSS property value within a specific range by using
                 breakpoint
                 modifiers.
@@ -424,7 +459,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Clamp from and to a single breakpoint</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Add a single breakpoint modifier to generate the scaling formula from the defined
                 breakpoint to
                 the largest breakpoint. Use the <code
@@ -454,7 +489,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Clamp between custom breakpoints</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Generate custom breakpoint ranges by writing the value inside brackets, use the <code
                   class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 dark:bg-gray-900 dark:border-gray-800  rounded px-4 py-1">min-</code>
                 and <code
@@ -483,7 +518,7 @@ module.exports = {
                 Interchangeable px/rem
                 units</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Clamped values can use either px or rem interchangeably, the plugin will convert all values to rem.
               </p>
             </div>
@@ -507,7 +542,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Unitless clamping</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 If no unit is specified, the calculation will multiply the value for your theme’s <code
                   class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 dark:bg-gray-900 dark:border-gray-800  rounded px-4 py-1">-&#8205;-&#8205;spacing</code>
                 scale.
@@ -533,7 +568,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Use Tailwind size variables</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Clamp using Tailwind’s predefined size tokens.
               </p>
             </div>
@@ -557,7 +592,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Use CSS custom properties</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Clamp using CSS custom properties, make sure the custom properties are defined in the <code
                   class="code-inline font-mono whitespce-nowrap text-[15px] bg-gray-100 border border-gray-250 dark:bg-gray-900 dark:border-gray-800  rounded px-4 py-1">:root</code>
                 element.
@@ -583,7 +618,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Container query support</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Clamp values based on container query breakpoints.
               </p>
             </div>
@@ -607,7 +642,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Decreasing and negative ranges</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Support clamped ranges that shrink or go below zero.
               </p>
             </div>
@@ -631,7 +666,7 @@ module.exports = {
                 class="font-semibold text-[clamp(18,20)] leading-[clamp(24,28)]  text-slate-900 dark:text-slate-200 text-balance">
                 Error reporting in CSS comments</h4>
               <p
-                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+                class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
                 Output validation errors as CSS comments for easy debugging.
               </p>
             </div>
@@ -663,7 +698,7 @@ module.exports = {
       </h3>
     </div>
     <div class="w-full px-[clamp(8,24)] py-[clamp(16,20)] border-b border-gray-200 dark:border-neutral-800 ">
-      <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-pretty">
+      <p class="text-[clamp(16,18)] leading-[clamp(24,28)]  text-slate-800 dark:text-slate-300 max-w-500 text-balance">
         This PostCSS plugin embraces a CSS-driven configuration, by scanning your
         generated CSS before generating all
         the
@@ -788,5 +823,4 @@ module.exports = {
     </div>
   </main>
 </body>
-
 </html>
