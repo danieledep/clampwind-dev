@@ -2,6 +2,7 @@ import Alpine from 'alpinejs'
 import ResizeFrame from './resizeFrame.js'
 import setFavicon from "./favicon.js";
 import smoothScroll from "./smoothScroll.js";
+import calcClamp from "./calcClamp.js";
 import '/src/css/main.css'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
@@ -9,6 +10,7 @@ import 'prismjs/themes/prism.css'
 
 Alpine.data('resizeFrame', ResizeFrame);
 Alpine.data('smoothScroll', smoothScroll);
+Alpine.data('calcClamp', calcClamp);
 
 window.Alpine = Alpine
 
