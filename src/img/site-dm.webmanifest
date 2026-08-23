@@ -2,23 +2,23 @@
   "name": "Clampwind",
   "icons": [
     {
-      "src": "src/img/android-192x192.png",
+      "src": "/clampwind-dev/android-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "src/img/android-512x512.png",
+      "src": "/clampwind-dev/android-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "src/img/android-maskable-192x192.png",
+      "src": "/clampwind-dev/android-maskable-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "src/img/android-maskable-512x512.png",
+      "src": "/clampwind-dev/android-maskable-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
